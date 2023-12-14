@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- topbar -->
+    <!-- <div class="bg-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col d-flex flex-nowrap align-items-center">
+                    <div class="navbar-brand d-inline-flex">
+                        <a href="#">
+                            <img class="d-flex" src="./img/arcom-logo.png" alt="arcom" style="height: 16px;">
+                        </a>
+                    </div>
+                    <div class="d-inline-flex ms-2">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Areas
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" style="z-index: 9999;">
+                                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Action 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Action 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="nav flex-nowrap justify-content-end">
+                        <li class="nav-item">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Lenguaje
+                                        <i class="fa-solid fa-globe"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark" style="z-index: 9999;">
+                                        <li><a class="dropdown-item" href="#">
+                                                <i class="fa-regular fa-flag"></i>
+                                                Español</a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                                <i class="fa-regular fa-flag"></i>
+                                                Ingles</a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                                <i class="fa-regular fa-flag"></i>
+                                                Otro</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Crear Cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Ingresar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light disabled">Soporte</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- navbar -->
+    <div class="sticky-top" style="background-color: white;">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- logo -->
+                <!--<div class="col d-flex align-items-center flex-grow-0" style="min-width: 6em;">
+                    <a href="#" class="">
+                        <h1 class="mb-0">
+                            <img class="img-fluid mb-2" src="./img/SSalud_logo_log.png" style="max-height: 1.3em;">
+                        </h1>
+                    </a>
+                </div>-->
+                <div class="col d-sm-flex align-items-center flex-grow-0" style="min-width: 17em;">
+                    <a href="#" class="">
+                        <h1 class="mb-0">
+                            <img class="img-fluid mb-2" src="./img/logomsp.png" style="max-height: 1.3em;">
+                        </h1>
+                    </a>
+                </div>
+                <!-- colapse icon -->
+                <button class="navbar-toggler btn-collapse" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars fs-2"></i>
+                </button>
+                <!-- menu -->
+                <div class="col collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="https://saludsalta.gob.ar/sti">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://saludsalta.gob.ar/sti/institucional/">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://saludsalta.gob.ar/sti/servicios/">Servicios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-light btn btn-gradient px-3 me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                                Accesos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="https://edu.saltasalud.gob.ar/">
+                                        Campus Virtual
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://saludsalta.gob.ar/sti/tecnologia-e-innovacion/tele-salud/">
+                                        TeleSalud
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="sti-hero-breadcrumb bg-gradient-1 py-4 position-relative">
+        <div class="container" style="position: relative; z-index: 1;">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item text-light">Inicio</li>
+                    <li class="breadcrumb-item text-light" aria-current="page">Area Operativa: CACHI</li>
+                </ol>
+            </nav>
+            <h3 class="fs-3 text-light"></h3>
+            <h2 class="fs-1 text-light">
+                <img class="img-fluid mb-2" src="./img/Safesa Iso.svg" style="max-height: 1.3em;">
+                Salud Federal SALTA
+            </h2>
+        </div>
+        <div id="particles-sti" class="particles-canvas"></div>
+    </div>
+
+    <main>
+        <div class="container-fluid m-0 align-items-center m-0 p-0 d-flex"
+            style="position: relative; flex-direction: column;">
+            <!-- Logo Flotante -->
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="270" height="270" version="1.1"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+                viewBox="0 0 603.72 603.24" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+                <defs>
+                    <style type="text/css">
+                        .custom-fill-0 {
+                            fill: #194F52;
+                        }
+
+                        .custom-fill-1 {
+                            fill: url(#custom-id-0);
+                        }
+
+                        .custom-fill-4 {
+                            fill: url(#custom-id-1);
+                        }
+
+                        .custom-fill-3 {
+                            fill: url(#custom-id-2);
+                        }
+
+                        .custom-fill-5 {
+                            fill: url(#custom-id-3);
+                        }
+
+                        .custom-fill-2 {
+                            fill: url(#custom-id-4);
+                        }
+                    </style>
+                    <radialGradient id="custom-id-0" gradientUnits="userSpaceOnUse"
+                        gradientTransform="matrix(-0.761437 1.8885 -1.39373 -1.02402 645 -434)" cx="308.12" cy="73.05"
+                        r="187.83" fx="308.12" fy="73.05">
+                        <stop offset="0" style="stop-opacity:1; stop-color:#C9F6D5"></stop>
+                        <stop offset="1" style="stop-opacity:1; stop-color:#0F909E"></stop>
+                    </radialGradient>
+                    <radialGradient id="custom-id-1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="matrix(-1.28735 2.26532 -1.77955 -1.21402 372 -91)" cx="108.35" cy="69.89"
+                        r="85.86" fx="108.35" fy="69.89">
+                        <stop offset="0" style="stop-opacity:1; stop-color:#C9F6D5"></stop>
+                        <stop offset="1" style="stop-opacity:1; stop-color:#1F97A4"></stop>
+                    </radialGradient>
+                    <radialGradient id="custom-id-2" gradientUnits="userSpaceOnUse"
+                        gradientTransform="matrix(-0.886883 1.69715 -1.768 -0.742184 1410 -389)"
+                        xlink:href="#custom-id-1" cx="500" cy="263.98" r="210.83" fx="500" fy="263.98">
+                    </radialGradient>
+                    <radialGradient id="custom-id-3" gradientUnits="userSpaceOnUse"
+                        gradientTransform="matrix(0.7476 3.03649 -3.32983 0.535053 1010 -1268)"
+                        xlink:href="#custom-id-1" cx="458.64" cy="268.48" r="85.86" fx="458.64" fy="268.48">
+                    </radialGradient>
+                    <radialGradient id="custom-id-4" gradientUnits="userSpaceOnUse"
+                        gradientTransform="matrix(-1.21007 1.80435 -1.89306 -1.1254 579 -380)" xlink:href="#custom-id-1"
+                        cx="240.34" cy="25.4" r="175.49" fx="240.34" fy="25.4">
+                    </radialGradient>
+                </defs>
+                <g id="Capa_x0020_1">
+                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                    <g id="_2904082812112">
+                        <path class="custom-fill-0"
+                            d="M386.96 447.38c22.7,-133.38 146.83,-197.8 214.34,-179.8 1.77,14.52 3.66,52.02 1.35,64.13 -37.8,-61.11 -145,60.76 -144.06,118.05 -0.28,-32.68 -102.22,240.01 -71.63,-2.38z">
+                        </path>
+                        <path class="custom-fill-0"
+                            d="M568.33 155.97c-74.5,-66.09 -199.58,-12.58 -208.54,90.01 19.33,-18.86 66.09,-42.37 91.64,-31.17l1.01 16.06c-14.64,1.86 -112.17,60.06 -126.26,105.96 -94.06,106.34 19.89,-243.65 -32.46,-109.25 -0.36,-131.13 122.62,-215.32 208.41,-151.88 6.52,5.37 60.08,59.18 66.19,80.29z">
+                        </path>
+                        <path class="custom-fill-0"
+                            d="M120.07 61.59c-40.76,22.95 -94.52,119.49 -106.73,175.65 29.8,-12.57 44.65,-3.21 58.3,-35.94 7.76,-84.12 35.18,-110.98 48.42,-139.72z">
+                        </path>
+                        <path class="custom-fill-0"
+                            d="M457.84 52.79c-13.46,-0.05 -35.79,1.35 -53.29,0.67 -49.86,-57.67 -190.03,0.78 -198.23,194.39 -39.72,45.56 -60.46,54.95 -64.17,-79.86 -6.46,-102.98 79.16,-160.81 140.79,-165.58 29.52,-2.8 105.08,-8.75 174.9,50.38z">
+                        </path>
+                        <path class="custom-fill-1"
+                            d="M521.38 94.44c-113.62,1.34 -158.29,58.71 -168,150.8 25.22,-50.15 85.12,-53.12 97.3,-52.05l1.2 29.14c-34.62,13.22 -106.23,65.23 -113.95,86.64 -30.26,85.1 -127.94,208.69 -277.67,163.08 -9.62,-13.07 -21.96,-20.95 -26.66,-33.16 124.29,30.35 272.67,-104.59 254.96,-215.62 -0.36,-131.13 122.62,-215.32 208.42,-151.89 6.52,5.37 14.19,12.01 24.4,23.06z">
+                        </path>
+                        <path class="custom-fill-2"
+                            d="M381.49 10.23c-126.51,-3.77 -183,109.22 -175.29,191.5 12.45,82.51 -41.18,197.54 -202.08,149.92 -5.38,-25.01 -3.47,-38.28 -4.13,-62.94 103.17,25.2 149.45,-15.35 135.43,-122.21 -6.46,-102.98 79.16,-160.82 140.79,-165.58 29.52,-2.8 78.78,0.96 105.27,9.31z">
+                        </path>
+                        <path class="custom-fill-3"
+                            d="M198.12 585.27c-18.25,-6.32 -31.55,-13.66 -43.52,-20.01 123.6,1.4 212.76,-19.6 231.61,-125.44 22.7,-133.38 146.83,-197.8 214.34,-179.8 0.47,2.9 3.41,34.42 2.42,39.33 -67.51,-16.77 -146.61,52.32 -145.12,142.85 14.44,108.74 -102.09,201.23 -259.73,143.07z">
+                        </path>
+                        <path class="custom-fill-4"
+                            d="M108.35 69.89c-41.08,34.61 -89.74,113.26 -101.94,169.43 45.43,11.66 69.65,-23.31 66.05,-56.08 -4.57,-37.86 13.74,-75.51 35.9,-113.35z">
+                        </path>
+                        <g>
+                            <path class="custom-fill-0"
+                                d="M485.66 541.23c40.76,-22.95 94.52,-119.48 106.72,-175.65 -29.8,12.57 -44.65,3.2 -58.3,35.93 -7.76,84.12 -35.18,110.98 -48.42,139.72z">
+                            </path>
+                            <path class="custom-fill-5"
+                                d="M497.38 532.93c41.08,-34.61 89.74,-113.26 101.95,-169.43 -45.43,-11.66 -69.65,23.31 -66.05,56.08 4.57,37.87 -13.74,75.51 -35.9,113.35z">
+                            </path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <!-- Primera Fila -->
+            <div class="row flex-nowrap">
+                <div class="col m-3" style="flex-grow: unset;">
+                    <div style="position: relative;">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="500" height="281.13"
+                            version="1.1"
+                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                            viewBox="0 0 1475.83 829.82" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:xodm="http://www.corel.com/coreldraw/odm/2003" class="svg-container">
+                            <defs>
+                                <style type="text/css">
+                                    .component_tl_fil_line {
+                                        stroke: #606062;
+                                        stroke-width: 1;
+                                        stroke-miterlimit: 22.9256;
+                                    }
+
+                                    .component_tl_fil0 {
+                                        fill: url(#radialGradient_tl);
+                                    }
+
+                                    .component_tl_fil1 {
+                                        fill: #FEFEFE;
+                                    }
+
+                                    .component_tl_fil2 {
+                                        fill: #606062;
+                                    }
+
+                                    .component_tl_fil3 {
+                                        fill: #96989A;
+                                    }
+
+                                    .component_tl_str0 {
+                                        font-family: 'Bebas Neue', sans-serif;
+                                        font-weight: 400;
+                                    }
+
+                                    .component_tl_str1 {
+                                        font-family: 'Lato', sans-serif;
+                                        font-weight: 700;
+                                    }
+
+                                    /* Estilo del enlace (cursor y sin decoración) */
+                                    .component_tl_link {
+                                        cursor: pointer;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    }
+                                </style>
+                                <radialGradient id="radialGradient_tl" gradientUnits="userSpaceOnUse"
+                                    gradientTransform="matrix(-5.16929 2.81456 -4.82559 -3.01503 -6635 2563)"
+                                    cx="-1017.13" cy="-74.68" r="414.91" fx="-1017.13" fy="-74.68">
+                                    <stop offset="0" style="stop-opacity:1; stop-color:#1DC4BC"></stop>
+                                    <stop offset="0.741176" style="stop-opacity:1; stop-color:#257F8D"></stop>
+                                    <stop offset="1" style="stop-opacity:1; stop-color:#2C3B5F"></stop>
+                                </radialGradient>
+                            </defs>
+                            <g id="Capa_x0020_1" transform="scale(1.0)">
+                                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                <path class="component_tl_fil1"
+                                    d="M1072.89 829.82l-452.69 0 0 -829.82 805.45 0c27.59,0 50.18,22.58 50.18,50.18l0 393.27c-198.44,38.65 -356.25,190.93 -402.94,386.38z">
+                                </path>
+                                <path class="component_tl_fil0"
+                                    d="M620.2 829.82l-570.03 0c-27.6,0 -50.17,-22.58 -50.17,-50.18l0 -729.47c0,-27.59 22.58,-50.18 50.17,-50.18l570.03 0 0 829.82z">
+                                </path>
+
+                                <text x="670" y="175" class="component_tl_str0"
+                                    style="font-size: 113px;fill: #000000;">gestión de
+                                    salud</text>
+                                <text x="670" y="257" class="component_tl_str1"
+                                    style="font-size: 56px;fill: #606062;">Administración de
+                                    la
+                                </text>
+                                <text x="670" y="322" class="component_tl_str1"
+                                    style="font-size: 56;fill: #606062;">información
+                                    sanitaria</text>
+                                <line class="component_tl_fil_line" x1="670" y1="350" x2="1420" y2="350"></line>
+                                <line class="component_tl_fil_line" x1="670" y1="620" x2="1125" y2="620"></line>
+                                <text x="670" y="406" class="component_tl_str1 component_tl_fil3"
+                                    style="font-size: 30px;">Herramienta que
+                                    ayuda a los profesionales de la salud a </text>
+                                <text x="670" y="442" class="component_tl_str1 component_tl_fil3"
+                                    style="font-size: 30px;">administrar la
+                                    información sanitaria de manera </text>
+                                <text x="670" y="476" class="component_tl_str1 component_tl_fil3"
+                                    style="font-size: 30px;">eficiente y
+                                    segura. Esta información incluye</text>
+                                <text x="670" y="510" class="component_tl_str1 component_tl_fil3"
+                                    style="font-size: 30px;">datos de
+                                    pacientes, registros médicos,</text>
+                                <text x="670" y="544" class="component_tl_str1 component_tl_fil3"
+                                    style="font-size: 30px;">resultados de
+                                    pruebas, información de </text>
+                                <text x="670" y="578" class="component_tl_str1 component_tl_fil3"
+                                    style="font-size: 30px;">citas, etc.</text>
+                                <a xlink:href="#" class="component_tl_link">
+                                    <rect id="ctl" class="component_tl_fil0" x="700" y="675" width="325" height="100"
+                                        rx="45.54" ry="45.54"></rect>
+                                    <text x="765" y="753" class="component_tl_fil1 component_tl_str0"
+                                        style="font-size: 80px;">ENTRAR</text>
+                                </a>
+                            </g>
+                        </svg>
+                        <img class="img-fluid" src="./img/Gestion sin fondo.png" alt="" style="transform: scaleX(-1); position: absolute; bottom: 0%; right: 58%; height: 15em;">
+                    </div>
+
+                </div>
+                <div class="col m-3" style="flex-grow: unset;">
+                    <div style="position: relative;">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="500" height="281.13"
+                            version="1.1"
+                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd; transform: scaleX(-1);"
+                            viewBox="0 0 1475.83 829.82" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:xodm="http://www.corel.com/coreldraw/odm/2003" class="svg-container">
+                            <defs>
+                                <style type="text/css">
+                                    .component_tr_fil_line {
+                                        stroke: #606062;
+                                        stroke-width: 1;
+                                        stroke-miterlimit: 22.9256;
+                                    }
+
+                                    .component_tr_fil0 {
+                                        fill: url(#radialGradient_tl);
+                                    }
+
+                                    .component_tr_fil1 {
+                                        fill: #FEFEFE;
+                                    }
+
+                                    .component_tr_fil2 {
+                                        fill: #606062;
+                                    }
+
+                                    .component_tr_fil3 {
+                                        fill: #96989A;
+                                    }
+
+                                    .component_tr_str0 {
+                                        font-family: 'Bebas Neue', sans-serif;
+                                        font-weight: 400;
+                                    }
+
+                                    .component_tr_str1 {
+                                        font-family: 'Lato', sans-serif;
+                                        font-weight: 700;
+                                    }
+
+                                    /* Estilo del enlace (cursor y sin decoración) */
+                                    .component_tr_link {
+                                        cursor: pointer;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    }
+                                </style>
+                                <radialGradient id="radialGradient_tl" gradientUnits="userSpaceOnUse"
+                                    gradientTransform="matrix(-5.16929 2.81456 -4.82559 -3.01503 -6635 2563)"
+                                    cx="-1017.13" cy="-74.68" r="414.91" fx="-1017.13" fy="-74.68">
+                                    <stop offset="0" style="stop-opacity:1; stop-color:#1DC4BC"></stop>
+                                    <stop offset="0.741176" style="stop-opacity:1; stop-color:#257F8D"></stop>
+                                    <stop offset="1" style="stop-opacity:1; stop-color:#2C3B5F"></stop>
+                                </radialGradient>
+                            </defs>
+                            <g id="Capa_x0020_1">
+                                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                <path class="component_tr_fil1"
+                                    d="M1072.89 829.82l-452.69 0 0 -829.82 805.45 0c27.59,0 50.18,22.58 50.18,50.18l0 393.27c-198.44,38.65 -356.25,190.93 -402.94,386.38z">
+                                </path>
+                                <path class="component_tr_fil0"
+                                    d="M620.2 829.82l-570.03 0c-27.6,0 -50.17,-22.58 -50.17,-50.18l0 -729.47c0,-27.59 22.58,-50.18 50.17,-50.18l570.03 0 0 829.82z">
+                                </path>
+
+                                <text x="-1413" y="175" class="component_tr_str0"
+                                    style="font-size: 105px; transform: scaleX(-1);">Registro Profesional</text>
+                                <text x="-1418" y="257" class="component_tr_str1"
+                                    style="font-size: 56px; fill: #606062; transform: scaleX(-1);">Acceso a la gestión
+                                    asistencial</text>
+                                <text x="-1073" y="322" class="component_tr_str1"
+                                    style="font-size: 56px; fill: #606062; transform: scaleX(-1);">de los
+                                    pacientes</text>
+                                <a xlink:href="http://stisalta.duckdns.org:8888/RegistroEnfermeria/servlet/enfermeria.inicio"
+                                    class="component_tr_link">
+                                    <text x="-968" y="476" class="component_tr_str1 component_tr_fil3"
+                                        style="font-size: 30px; fill: #606062; transform: scaleX(-1);"> Registro
+                                        Enfermeria +</text>
+                                </a>
+                                <a xlink:href="http://stisalta.duckdns.org:9999/Odontologia/sistema.inicio"
+                                    class="component_tr_link">
+                                    <text x="-985" y="406" class="component_tr_str1 component_tr_fil3"
+                                        style="font-size: 30px; fill: #606062; transform: scaleX(-1);">Registro
+                                        Odontologia +</text>
+                                </a>
+
+                                <a xlink:href="#" class="component_tr_link">
+                                    <rect id="ctl" class="component_tr_fil0" x="700" y="675" width="325" height="100"
+                                        rx="45.54" ry="45.54"></rect>
+                                    <text x="-950" y="753" class="component_tr_fil1 component_tr_str0"
+                                        style="font-size: 80px; transform: scaleX(-1);">ENTRAR</text>
+                                </a>
+
+                                <line class="component_tr_fil_line" x1="670" y1="350" x2="1420" y2="350"></line>
+                                <line class="component_tr_fil_line" x1="670" y1="620" x2="1125" y2="620"></line>
+                            </g>
+                        </svg>
+                        <img class="img-fluid" src="./img/registro.png" alt="" style="transform: scaleX(-1); position: absolute; bottom: 0%; right: -17%; height: 15em;">
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-nowrap mt-4">
+                <div class="col m-3" style="flex-grow: unset;">
+                    <div style="position: relative;">
+                        <div style="position: relative;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="500" height="281.13"
+                                version="1.1"
+                                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd; transform: scaleY(-1);"
+                                viewBox="0 0 1475.83 829.82" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:xodm="http://www.corel.com/coreldraw/odm/2003" class="svg-container">
+                                <defs>
+                                    <style type="text/css">
+                                        .component_bl_fil_line {
+                                            stroke: #606062;
+                                            stroke-width: 1;
+                                            stroke-miterlimit: 22.9256;
+                                        }
+
+                                        .component_bl_fil0 {
+                                            fill: url(#radialGradient_tl);
+                                        }
+
+                                        .component_bl_fil1 {
+                                            fill: #FEFEFE;
+                                        }
+
+                                        .component_bl_fil2 {
+                                            fill: #606062;
+                                        }
+
+                                        .component_bl_fil3 {
+                                            fill: #96989A;
+                                        }
+
+                                        .component_bl_str0 {
+                                            font-family: 'Bebas Neue', sans-serif;
+                                            font-weight: 400;
+                                        }
+
+                                        .component_bl_str1 {
+                                            font-family: 'Lato', sans-serif;
+                                            font-weight: 700;
+                                        }
+
+                                        /* Estilo del enlace (cursor y sin decoración) */
+                                        .component_bl_link {
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                            color: inherit;
+                                        }
+                                    </style>
+                                    <radialGradient id="radialGradient_tl" gradientUnits="userSpaceOnUse"
+                                        gradientTransform="matrix(-5.16929 2.81456 -4.82559 -3.01503 -6635 2563)"
+                                        cx="-1017.13" cy="-74.68" r="414.91" fx="-1017.13" fy="-74.68">
+                                        <stop offset="0" style="stop-opacity:1; stop-color:#1DC4BC"></stop>
+                                        <stop offset="0.741176" style="stop-opacity:1; stop-color:#257F8D"></stop>
+                                        <stop offset="1" style="stop-opacity:1; stop-color:#2C3B5F"></stop>
+                                    </radialGradient>
+                                </defs>
+                                <g id="Capa_x0020_1">
+                                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                    <path class="component_bl_fil1"
+                                        d="M1072.89 829.82l-452.69 0 0 -829.82 805.45 0c27.59,0 50.18,22.58 50.18,50.18l0 393.27c-198.44,38.65 -356.25,190.93 -402.94,386.38z">
+                                    </path>
+                                    <path class="component_bl_fil0"
+                                        d="M620.2 829.82l-570.03 0c-27.6,0 -50.17,-22.58 -50.17,-50.18l0 -729.47c0,-27.59 22.58,-50.18 50.17,-50.18l570.03 0 0 829.82z">
+                                    </path>
+
+                                    <text x="670" y="-660" class="component_bl_str0"
+                                        style="font-size: 100px; transform: scaleY(-1);">Primer
+                                        Nivel</text>
+                                    <text x="670" y="-565" class="component_bl_str0"
+                                        style="font-size: 100px; transform: scaleY(-1);">de
+                                        Atención</text>
+                                    <text x="670" y="-490" class="component_bl_str1"
+                                        style="font-size: 56px; fill: #606062; transform: scaleY(-1);">Salta</text>
+
+
+
+
+
+
+
+
+                                    <a xlink:href="#" class="component_bl_link">
+                                        <rect id="ctl" class="component_bl_fil0" x="875" y="50" width="325" height="100"
+                                            rx="45.54" ry="45.54"></rect>
+                                        <text x="935" y="-68" class="component_bl_fil1 component_bl_str0"
+                                            style="font-size: 80px; transform: scaleY(-1);">ENTRAR</text>
+                                    </a>
+
+                                    <line class="component_bl_fil_line" x1="670" y1="195" x2="1420" y2="195"></line>
+                                    <line class="component_bl_fil_line" x1="672" y1="460" x2="1275" y2="462"></line>
+                                </g>
+                            </svg>
+                            <img class="img-fluid" src="./img/pna.png" alt="" style="transform: scaleX(-1); position: absolute; bottom: 0%; left: -11%; height: 17em;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col m-3" style="flex-grow: unset;">
+                    <div style="position: relative;">
+                        <div style="position: relative;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="500" height="281.13"
+                                version="1.1"
+                                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd; transform: scaleX(-1) scaleY(-1);"
+                                viewBox="0 0 1475.83 829.82" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:xodm="http://www.corel.com/coreldraw/odm/2003" class="svg-container">
+                                <defs>
+                                    <style type="text/css">
+                                        .component_br_fil_line {
+                                            stroke: #606062;
+                                            stroke-width: 1;
+                                            stroke-miterlimit: 22.9256;
+                                        }
+
+                                        .component_br_fil0 {
+                                            fill: url(#radialGradient_tl);
+                                        }
+
+                                        .component_br_fil1 {
+                                            fill: #FEFEFE;
+                                        }
+
+                                        .component_br_fil2 {
+                                            fill: #606062;
+                                        }
+
+                                        .component_br_fil3 {
+                                            fill: #96989A;
+                                        }
+
+                                        .component_br_str0 {
+                                            font-family: 'Bebas Neue', sans-serif;
+                                            font-weight: 400;
+                                        }
+
+                                        .component_br_str1 {
+                                            font-family: 'Lato', sans-serif;
+                                            font-weight: 700;
+                                        }
+
+                                        /* Estilo del enlace (cursor y sin decoración) */
+                                        .component_br_link {
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                            color: inherit;
+                                        }
+                                    </style>
+                                    <radialGradient id="radialGradient_tl" gradientUnits="userSpaceOnUse"
+                                        gradientTransform="matrix(-5.16929 2.81456 -4.82559 -3.01503 -6635 2563)"
+                                        cx="-1017.13" cy="-74.68" r="414.91" fx="-1017.13" fy="-74.68">
+                                        <stop offset="0" style="stop-opacity:1; stop-color:#1DC4BC"></stop>
+                                        <stop offset="0.741176" style="stop-opacity:1; stop-color:#257F8D"></stop>
+                                        <stop offset="1" style="stop-opacity:1; stop-color:#2C3B5F"></stop>
+                                    </radialGradient>
+                                </defs>
+                                <g id="Capa_x0020_1">
+                                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                    <path class="component_br_fil1"
+                                        d="M1072.89 829.82l-452.69 0 0 -829.82 805.45 0c27.59,0 50.18,22.58 50.18,50.18l0 393.27c-198.44,38.65 -356.25,190.93 -402.94,386.38z">
+                                    </path>
+                                    <path class="component_br_fil0"
+                                        d="M620.2 829.82l-570.03 0c-27.6,0 -50.17,-22.58 -50.17,-50.18l0 -729.47c0,-27.59 22.58,-50.18 50.17,-50.18l570.03 0 0 829.82z">
+                                    </path>
+
+                                    <text x="-970" y="-635" class="component_br_str0"
+                                        style="font-size: 100px; transform: scaleX(-1) scaleY(-1);">Tableros</text>
+                                    <text x="-932" y="-555" class="component_br_str1"
+                                        style="font-size: 56px; fill: #606062; transform: scaleX(-1) scaleY(-1);">Central
+                                        de</text>
+                                    <text x="-1080" y="-490" class="component_br_str1"
+                                        style="font-size: 56px; fill: #606062; transform: scaleX(-1) scaleY(-1);">análisis
+                                        de
+                                        datos</text>
+
+
+
+
+
+
+
+
+                                    <a xlink:href="#" class="component_br_link">
+                                        <rect id="ctl" class="component_br_fil0" x="875" y="50" width="325" height="100"
+                                            rx="45.54" ry="45.54"></rect>
+                                        <text x="-1130" y="-68" class="component_br_fil1 component_br_str0"
+                                            style="font-size: 80px; transform: scaleX(-1) scaleY(-1);">ENTRAR</text>
+                                    </a>
+
+                                    <line class="component_br_fil_line" x1="670" y1="195" x2="1420" y2="195"></line>
+                                    <line class="component_br_fil_line" x1="672" y1="460" x2="1275" y2="462"></line>
+                                </g>
+                            </svg>
+                            <img class="img-fluid" src="./img/graficos.png" alt="" style="position: absolute; bottom: 0%; right: -20.5%; height: 17em;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="particles-footer" class="bg-gradient-1 position-relative">
+        <div id="particles-sti-footer" class="particles-canvas"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="row"></div>
+            <div class="row mt-5">
+                <div class="col d-flex flex-column">
+                    <h5 class="fs-3 text-light">Contacto</h5>
+                    <p class="fs-6 text-light">Tel: 0387-4221337</p>
+                    <p class="fs-6 text-light">Email: soporte@tecnologiaeinovacion.com</p>
+                </div>
+                <div class="col">
+                    <h5 class="fs-3 text-light">Sub. Sec. Tecnología e Innovación</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="fs-6 text-light">Gestión de Salud</a></li>
+                        <li><a href="#" class="fs-6 text-light">Primer Nivel de Atención</a></li>
+                        <li><a href="#" class="fs-6 text-light">Registro Profesional</a></li>
+                        <li><a href="#" class="fs-6 text-light">Tableros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
